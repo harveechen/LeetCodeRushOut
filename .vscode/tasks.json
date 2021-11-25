@@ -10,7 +10,7 @@
 				"${file}",
 				"${workspaceFolder}/extra/utils.cpp",
 				"-o",
-				"${workspaceFolder}/build/${fileBasenameNoExtension}",
+				"${workspaceFolder}/build/${fileDirnameBasename}-${fileBasenameNoExtension}",
 				"-I",
 				"${workspaceFolder}",
 
