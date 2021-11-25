@@ -10,7 +10,7 @@
 
 `oj` 在新建cpp文件中敲击`oj`并回车可以快速写好代码模板
 
-`input.txt` 输入文件
+`input.txt` 需要输入文件时，在root目录下创建 `input.txt`
 
 details：
 * 编译好的文件统一放在build文件目录下，格式为 `父文件夹名-文件名`
