@@ -1,9 +1,9 @@
-// 整数反转
+#include <unordered_map>
+#include <vector>
 #include <iostream>
-#include <sstream>
 #include <algorithm>
 #include <string>
-#include <bits/stdc++.h>
+#include <extra/utils.hpp>
 
 using namespace std;
 
@@ -24,13 +24,11 @@ public:
     }
 };
 
-int stringToInteger(string input) {
-    return stoi(input);
-}
-
-int main() {
+int main()
+{
     string line;
-    while (getline(cin, line)) {
+    while (getline(cin, line))
+    {
         int x = stringToInteger(line);
         
         int ret = Solution().reverse(x);

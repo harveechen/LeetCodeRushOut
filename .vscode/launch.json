@@ -11,7 +11,7 @@
             "program": "${workspaceFolder}/build/${fileBasenameNoExtension}",
             "args": ["<", "${workspaceFolder}/input.txt"],
             "stopAtEntry": false,
-            "cwd": "${workspaceFolder}",
+            "cwd": "${fileDirname}",
             "environment": [],
             "externalConsole": false,
             "MIMode": "gdb",
