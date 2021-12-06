@@ -3,6 +3,7 @@
 #include <string>
 #include <sstream>
 #include <queue>
+#include <assert.h>
 #include <extra/utils.hpp>
 
 using namespace std;
@@ -30,6 +31,22 @@ vector<int> stringToIntegerVector(string input) {
     char delim = ',';
     while (getline(ss, item, delim)) {
         output.push_back(stoi(item));
+    }
+    return output;
+}
+
+vector<string> stringToStringVector(string input) {
+    vector<string> output;
+    trimLeftTrailingSpaces(input);
+    trimRightTrailingSpaces(input);
+    input = input.substr(1, input.length() - 2);
+    stringstream ss;
+    ss.str(input);
+    string item;
+    char delim = ',';
+    while (getline(ss, item, delim)) {
+        item = item.substr(1, item.length() - 2);
+        output.push_back(item);
     }
     return output;
 }
@@ -91,4 +108,34 @@ TreeNode *stringToTreeNode(string input)
 int stringToInteger(string input)
 {
     return stoi(input);
+}
+
+string stringToString(string input) {
+    assert(input.length() >= 2);
+    string result;
+    for (int i = 1; i < input.length() -1; i++) {
+        char currentChar = input[i];
+        if (input[i] == '\\') {
+            char nextChar = input[i+1];
+            switch (nextChar) {
+                case '\"': result.push_back('\"'); break;
+                case '/' : result.push_back('/'); break;
+                case '\\': result.push_back('\\'); break;
+                case 'b' : result.push_back('\b'); break;
+                case 'f' : result.push_back('\f'); break;
+                case 'r' : result.push_back('\r'); break;
+                case 'n' : result.push_back('\n'); break;
+                case 't' : result.push_back('\t'); break;
+                default: break;
+            }
+            i++;
+        } else {
+          result.push_back(currentChar);
+        }
+    }
+    return result;
+}
+
+string boolToString(bool input) {
+    return input ? "True" : "False";
 }

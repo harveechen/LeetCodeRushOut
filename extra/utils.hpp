@@ -4,6 +4,7 @@
 using namespace std;
 
 vector<int> stringToIntegerVector(string input);
+vector<string> stringToStringVector(string input);
 struct TreeNode
 {
     int val;
@@ -15,3 +16,5 @@ struct TreeNode
 };
 TreeNode *stringToTreeNode(string input);
 int stringToInteger(string input);
+string stringToString(string input);
+string boolToString(bool input);
