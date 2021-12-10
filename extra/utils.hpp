@@ -3,6 +3,7 @@
 
 using namespace std;
 
+string integerVectorToString(vector<int> list, int length = -1);
 vector<int> stringToIntegerVector(string input);
 vector<string> stringToStringVector(string input);
 struct TreeNode
