@@ -13,7 +13,7 @@ public:
         if (s.length() < t.length()) return "";
         unordered_map<char, int> map;
         int cnt = 0;
-        int minlen = t.length() + 1;
+        int minlen = s.length() + 1;
 
         for (const char &ch : t) {
             if (map.count(ch)) {
@@ -52,7 +52,7 @@ public:
             }
         }
 
-        return minlen 
+        return minlen == s.length() + 1 ? "" : s.substr(minleft, minlen);
     }
 };
 
