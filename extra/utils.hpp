@@ -3,6 +3,9 @@
 
 using namespace std;
 
+
+void trimLeftTrailingSpaces(string &input);
+void trimRightTrailingSpaces(string &input);
 string integerVectorToString(vector<int> list, int length = -1);
 vector<int> stringToIntegerVector(string input);
 vector<string> stringToStringVector(string input);
@@ -26,6 +29,7 @@ struct ListNode
 };
 
 TreeNode *stringToTreeNode(string input);
+string treeNodeToString(TreeNode* root);
 int stringToInteger(string input);
 string stringToString(string input);
 string boolToString(bool input);
