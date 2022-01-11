@@ -20,6 +20,7 @@
 		"prefix": "oj",
 		"body": [
 			"#include <unordered_map>",
+			"#include <queue>",
 			"#include <stack>",
 			"#include <vector>",
 			"#include <iostream>",

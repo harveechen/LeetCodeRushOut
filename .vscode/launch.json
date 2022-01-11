@@ -22,7 +22,7 @@
                     "ignoreFailures": true
                 }
             ],
-            "preLaunchTask": "编译",
+            "preLaunchTask": "complie",
             "miDebuggerPath": "/usr/bin/gdb"
         }
     ]
