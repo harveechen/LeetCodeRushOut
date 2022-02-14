@@ -28,7 +28,7 @@
 * 代码模板中的 `extra/utils.hpp` 包含了leetcode的输入输出处理函数
 * 部分笔试记录 `git checkout oj`
 
-## examples
+## Examples
 
 ### 输入
 
