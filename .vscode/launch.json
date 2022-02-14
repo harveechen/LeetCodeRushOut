@@ -9,7 +9,10 @@
             "type": "cppdbg",
             "request": "launch",
             "program": "${workspaceFolder}/build/${fileDirnameBasename}-${fileBasenameNoExtension}",
-            "args": ["<", "${workspaceFolder}/input.txt"],
+            "args": [
+                "<",
+                "${workspaceFolder}/input.txt"
+            ],
             "stopAtEntry": false,
             "cwd": "${fileDirname}",
             "environment": [],
