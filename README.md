@@ -35,7 +35,7 @@
 #### stringToIntegerVector
 ```cpp
 // input.txt
-[1, 2, 3, 4]
+[1,2,3,4]
 
 // xxx.cpp
 vector<int> input = stringToIntegerVector(line);
@@ -45,20 +45,20 @@ vector<int> input = stringToIntegerVector(line);
 #### stringToStringVector
 ```cpp
 // input.txt
-["a,", "b", "c"]
+["a","b","c"]
 
 // xxx.cpp
 vector<string> input = stringToStringVector(line);
 
 ```
 
-#### stringToStringVector
+#### stringToTreeNode
 ```cpp
 // input.txt
-["a,", "b", "c"]
+[1,null,0,0,1]
 
 // xxx.cpp
-vector<string> input = stringToStringVector(line);
+TreeNode *input = stringToTreeNode(line);
 
 ```
 
