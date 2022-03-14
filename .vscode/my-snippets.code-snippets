@@ -83,5 +83,21 @@
 			"}",
 		],
 		"description": "function coding style"
+	},
+	"segment tree": {
+		"scope": "cpp",
+		"prefix": "seg",
+		"body": [
+			"void build(int s, int t, int p) {",
+			"\tif (s == t) {",
+			"\t\td[p] = a[s];",
+			"\t\treturn;",
+			"\t}",
+			"\tint m = s + ((s - t) >> 1);",
+			"\tbuild(s, m, p*2);",
+			"\tbuild(m+1, t, p*2+1);",
+			"\td[p] = d[p*2] + d[p*2+1];",
+			"}"
+		]
 	}
 }
