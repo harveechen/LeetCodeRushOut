@@ -6,6 +6,7 @@
 			"label": "complie",
 			"command": "/usr/bin/g++",
 			"args": [
+				"-O0",
 				"-g",
 				"${file}",
 				"${workspaceFolder}/extra/utils.cpp",
@@ -13,7 +14,9 @@
 				"${workspaceFolder}/build/${fileDirnameBasename}-${fileBasenameNoExtension}",
 				"-I",
 				"${workspaceFolder}",
-
+				"-I",
+				"/usr/include/python3.8",
+				"-lpython3.8"
 			],
 			"options": {
 				"cwd": "${fileDirname}"

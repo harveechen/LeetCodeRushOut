@@ -26,7 +26,8 @@
                 }
             ],
             "preLaunchTask": "complie",
-            "miDebuggerPath": "/usr/bin/gdb"
+            "miDebuggerPath": "/usr/bin/gdb",
+            // "sourceFileMap": {"/build/glibc-eX1tMB": "/usr/src/glibc"}
         }
     ]
 }

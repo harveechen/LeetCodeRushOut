@@ -15,7 +15,6 @@ bool isSubstring(string s, string t) {
         return true;
     }
     
-    
     for (int offset = 0; offset < n1- n2; offset++) {
         int i = offset, j = i + n2 - 1;
         for (; i <= j; i++, j--) {
